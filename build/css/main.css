@@ -79,9 +79,17 @@ body {
   float: left;
 }
 #centralBox > div h1 {
+  cursor: pointer;
   padding-top: 10px;
 }
 #centralBox > div h1 a {
   color: inherit;
   text-decoration: none;
+}
+
+.tail {
+  width: 33%;
+  height: 50%;
+  border: 1px dashed grey;
+  float: left;
 }
