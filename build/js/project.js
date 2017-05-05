@@ -1,0 +1,1 @@
+function btnEffect(t){t.getElementsByTagName("div")[0].style.height="100%"}function btnEffectOut(t){t.getElementsByTagName("div")[0].style.height="0%"}

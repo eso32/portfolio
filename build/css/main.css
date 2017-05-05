@@ -6,7 +6,6 @@
 
 html {
   height: 100%;
-  /* <------------ */
 }
 
 body {
@@ -87,9 +86,134 @@ body {
   text-decoration: none;
 }
 
-.tail {
-  width: 33%;
+#box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  margin: 0px auto;
+}
+#box .tail {
+  overflow: hidden;
+  border: 2px solid white;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  width: 33.33%;
   height: 50%;
-  border: 1px dashed grey;
+  padding-top: 20px;
   float: left;
+  position: relative;
+  cursor: pointer;
+}
+#box .tail h1 {
+  letter-spacing: 2px;
+}
+
+#back {
+  background: #0061ac url("../../img/arrow.png") top no-repeat;
+  background-size: 50% 50%;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+#tproj {
+  background: #2ecc40;
+  position: relative;
+}
+
+#trproj {
+  background: #a864a8;
+  position: relative;
+}
+
+#techno {
+  background: #662d91;
+  position: relative;
+  text-align: left;
+}
+#techno span {
+  font-size: 25px;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  background: #501b78;
+  line-height: 60px;
+}
+
+#bproj {
+  background: #f7941d;
+  position: relative;
+}
+
+#brproj {
+  background: #2ecc40;
+  position: relative;
+}
+
+#scroll {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+#scroll img {
+  width: 50px;
+}
+
+#box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  margin: 0px auto;
+}
+#box .tailBig {
+  background: #0061ac;
+  overflow: hidden;
+  border: 2px solid white;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  height: 100%;
+  width: 33.33%;
+  float: left;
+}
+#box .tailBig h1 {
+  letter-spacing: 2px;
+}
+#box .tailBig .tailSmall {
+  overflow: hidden;
+  border-bottom: 2px solid white;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  height: 50%;
+  width: 100%;
+  padding-top: 20px;
+  float: left;
+  position: relative;
+}
+#box .tailBig .tailSmall span {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  font-size: 80px;
+  margin-top: -60px;
+}
+
+#description {
+  background: #2ecc40;
+}
+
+#visit {
+  background: #f7941d;
+  cursor: pointer;
+}
+
+.curtain {
+  background-color: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: height 0.3s cubic-bezier(0.07, 0.48, 0.62, 1) 0s;
+  transition: height 0.3s cubic-bezier(0.07, 0.48, 0.62, 1) 0s;
 }

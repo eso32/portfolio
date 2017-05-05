@@ -1,24 +1,6 @@
-// function left(){
-//
-//   var leftDiv = document.getElementById('leftD');
-//   var rightDiv = document.getElementById('rightD');
-//
-//   leftDiv.style.width = "80%";
-//   rightDiv.style.width = "20%";
-// };
-//
-// function right(){
-//
-//   var leftDiv = document.getElementById('leftD');
-//   var rightDiv = document.getElementById('rightD');
-//   var test = document.getElementById('test');
-//
-//
-//   rightDiv.style.width = "80%";
-//   leftDiv.style.width = "20%";
-// };
 document.getElementById("body").addEventListener("mousemove", follow);
 
+//SLIDING EFFECT FOR THE HOME PAGE
 function follow(event){
   var x = event.clientX;
   var y = event.clientY;
@@ -30,6 +12,7 @@ function follow(event){
   leftDiv.style.width = x/w*100 +"%";
 }
 
+//ONCLICK EFECT FOR HOMEPAGE (BLOG | PORTFOLIO)
 function change(elem){
   document.getElementById("body").removeEventListener("mousemove", follow);
   var leftDiv = document.getElementById('leftD');
@@ -41,5 +24,4 @@ function change(elem){
     leftDiv.style.width = "0%";
     rightDiv.style.width = "100%";
   }
-
 }
