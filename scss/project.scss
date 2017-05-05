@@ -2,6 +2,16 @@
   box-sizing: border-box;
   height: 100%;
   margin: 0px auto;
+  .tail{
+    overflow: hidden;
+    border: 2px solid white;
+    box-sizing: inherit;
+    width: 33.33%;
+    height: 50%;
+    padding-top: 20px;
+    float: left;
+    position: relative;
+  }
   .tailBig{
     background: $Tblue;
     overflow: hidden;

@@ -107,7 +107,6 @@ body {
   padding-top: 20px;
   float: left;
   position: relative;
-  cursor: pointer;
 }
 #boxLeft .tail h1 {
   letter-spacing: 2px;
@@ -146,10 +145,22 @@ body {
   padding-top: 20px;
   float: left;
   position: relative;
-  cursor: pointer;
 }
 #boxRight .tail h1 {
   letter-spacing: 2px;
+}
+#boxRight .tail img {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -40%;
+  width: 80%;
+  -webkit-transition: top 0.3s ease  0s;
+  transition: top 0.3s ease  0s;
+}
+#boxRight .tail img:hover {
+  top: 30%;
 }
 
 #back {
@@ -157,6 +168,7 @@ body {
   background-size: 50% 50%;
   background-position: 50% 50%;
   position: relative;
+  cursor: pointer;
 }
 
 #tproj {
@@ -173,6 +185,7 @@ body {
   background: #662d91;
   position: relative;
   text-align: left;
+  cursor: default !important;
 }
 #techno span {
   white-space: nowrap;
@@ -187,12 +200,12 @@ body {
 }
 
 #bproj {
-  background: #f7941d;
+  background: #299199;
   position: relative;
 }
 
 #brproj {
-  background: #2ecc40;
+  background: #f7941d;
   position: relative;
 }
 
@@ -205,11 +218,50 @@ body {
   width: 50px;
 }
 
+@-webkit-keyframes blink {
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes blink {
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.5;
+  }
+}
+.blink {
+  -webkit-animation: blink 2s linear 0s infinite;
+          animation: blink 2s linear 0s infinite;
+}
+
 #box {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%;
   margin: 0px auto;
+}
+#box .tail {
+  overflow: hidden;
+  border: 2px solid white;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  width: 33.33%;
+  height: 50%;
+  padding-top: 20px;
+  float: left;
+  position: relative;
 }
 #box .tailBig {
   background: #0061ac;

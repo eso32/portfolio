@@ -13,7 +13,7 @@
     padding-top: 20px;
     float: left;
     position: relative;
-    cursor: pointer;
+    // cursor: pointer;
     h1{
       letter-spacing: 2px;
     }
@@ -50,9 +50,22 @@
     padding-top: 20px;
     float: left;
     position: relative;
-    cursor: pointer;
+    // cursor: pointer;
     h1{
       letter-spacing: 2px;
+    }
+    img{
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      margin-left: -40%;
+      // margin-top: 20px;
+      width: 80%;
+      transition: top 0.3s ease  0s;
+      &:hover{
+        top:30%
+      }
     }
   }
 }
@@ -62,6 +75,7 @@
   background-size: 50% 50%;
   background-position: 50% 50%;
   position: relative;
+  cursor: pointer;
 }
 
 #tproj{
@@ -78,6 +92,7 @@
   background: #662d91;
   position: relative;
   text-align: left;
+  cursor: default !important;
   span{
     white-space: nowrap;
     font-size: 25px;
@@ -92,12 +107,12 @@
 }
 
 #bproj{
-  background: #f7941d;
+  background: #299199;
   position: relative;
 }
 
 #brproj{
-  background: $Tgreen;
+  background: #f7941d;
   position: relative;
 }
 
@@ -108,4 +123,19 @@
   img{
     width: 50px;
   }
+}
+
+@keyframes blink {
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.5;
+  }
+}
+.blink {
+  animation: blink 2s linear 0s infinite;
 }
