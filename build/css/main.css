@@ -22,8 +22,8 @@ body {
   height: 100%;
   float: left;
   display: inline-block;
-  -webkit-transition: width 0.5s ease 0s;
-  transition: width 0.5s ease 0s;
+  -webkit-transition: width 0.5s linear 0s;
+  transition: width 0.5s linear 0s;
 }
 
 #leftD {
@@ -33,21 +33,24 @@ body {
 #leftD img {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 50%;
   height: 200px;
   margin-top: -100px;
+  margin-left: -295px;
 }
 
 #rightD {
   background: #0061ac;
   position: relative;
+  overflow: hidden;
 }
 #rightD img {
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 50%;
   height: 200px;
   margin-top: -100px;
+  margin-left: -100px;
 }
 
 #test {
@@ -86,25 +89,66 @@ body {
   text-decoration: none;
 }
 
-#box {
+#boxLeft {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%;
   margin: 0px auto;
+  width: 33.33%;
+  float: left;
 }
-#box .tail {
+#boxLeft .tail {
   overflow: hidden;
   border: 2px solid white;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  width: 33.33%;
+  width: 100%;
   height: 50%;
   padding-top: 20px;
   float: left;
   position: relative;
   cursor: pointer;
 }
-#box .tail h1 {
+#boxLeft .tail h1 {
+  letter-spacing: 2px;
+}
+#boxLeft .tail2 {
+  overflow: hidden;
+  border: 2px solid white;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  width: 100%;
+  height: 50%;
+  padding-top: 20px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+#boxLeft .tail2 h1 {
+  letter-spacing: 2px;
+}
+
+#boxRight {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  margin: 0px auto;
+  width: 66.66%;
+  float: left;
+}
+#boxRight .tail {
+  overflow: hidden;
+  border: 2px solid white;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  width: 50%;
+  height: 50%;
+  padding-top: 20px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+#boxRight .tail h1 {
   letter-spacing: 2px;
 }
 
@@ -131,6 +175,7 @@ body {
   text-align: left;
 }
 #techno span {
+  white-space: nowrap;
   font-size: 25px;
   cursor: pointer;
   -webkit-border-radius: 10px;
@@ -176,6 +221,10 @@ body {
   width: 33.33%;
   float: left;
 }
+#box .tailBig img {
+  margin-top: 15%;
+  width: 80%;
+}
 #box .tailBig h1 {
   letter-spacing: 2px;
 }
@@ -196,6 +245,10 @@ body {
   left: 35%;
   font-size: 80px;
   margin-top: -60px;
+}
+#box .tailBig .tailSmall p {
+  padding: 15px;
+  text-align: justify;
 }
 
 #description {
