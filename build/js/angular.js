@@ -1,0 +1,1 @@
+var app=angular.module("myApp",["ngRoute"]);app.config(function(e){e.when("/",{templateUrl:"js/templates/welcome.html"}).when("/portfolio",{templateUrl:"js/templates/portfolio.html"}).otherwise({redirectTo:"/"})}),app.controller("myCtrl",["$scope",function(e){e.myLanguage="None",e.cpp=function(){e.myLanguage="cpp"}}]);
