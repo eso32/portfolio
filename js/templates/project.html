@@ -1,0 +1,20 @@
+<div id="box">
+  <div class="tail btn" id="back" onmouseover="btnEffect(this)" onmouseout="btnEffectOut(this)" onclick="history.back()">
+    <div class="curtain"></div>
+  </div>
+  <div class="tailBig">
+    <img ng-src="{{project.image}}" />
+    <!-- <img src="img/epm.png" /> -->
+  </div>
+  <div class="tailBig">
+    <div class="tailSmall" id="description">
+      <h1>{{project.name}}</h1>
+      <p>{{project.description}}</p>
+    </div>
+    <div class="tailSmall btn" id="visit" onmouseover="btnEffect(this)" onmouseout="btnEffectOut(this)" onclick="transVisit(this)">
+      <span>VISIT</span>
+      <div class="curtain"></div>
+    </div>
+  </div>
+</div>
+<script src="js/project.js"></script>

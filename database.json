@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "name": "PROJECT CARD",
+      "id": "tproj",
+      "image": "img/epm.png",
+      "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
+    },
+    {
+      "name": "EQUIPMENT EFFICENCY DATABASE",
+      "id": "trproj",
+      "image": "img/plk.png",
+      "description": "The main feature of system is collecting and sharing data from project's site. System is based on PHP and BOOTSTRAP."
+    },
+    {
+      "name": "THE TAKE APP BLOG",
+      "id": "tproj",
+      "image": "img/take.png",
+      "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
+    },
+    {
+      "name": "COMMERCIAL PAGE",
+      "id": "tproj",
+      "image": "img/epm.png",
+      "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
+    },
+    {
+      "name": "COMMERCIAL PAGE",
+      "id": "tproj",
+      "image": "img/epm.png",
+      "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
+    },
+    {
+      "name": "COMMERCIAL PAGE",
+      "id": "tproj",
+      "image": "img/epm.png",
+      "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
+    }
+  ]
+}

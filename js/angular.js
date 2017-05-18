@@ -6,17 +6,18 @@ app.config(function($routeProvider){
 		templateUrl: 'js/templates/welcome.html'
 	})
 	.when('/portfolio',{
+		controller: 'myCtrl',
 		templateUrl: 'js/templates/portfolio.html'
+	})
+	.when('/portfolio/project/:id',{
+		controller: 'projectCtrl',
+		templateUrl: 'js/templates/project.html'
 	})
 	.otherwise({
 		redirectTo: '/'
 	});
 });
 
-app.controller('myCtrl', ['$scope', function($scope){
-	$scope.myLanguage = 'None';
-	$scope.cpp = function(){
-		$scope.myLanguage="cpp";
-	}
+app.controller('projectCtrl', ['$scope','$http', function($scope, $http){
 
 }]);

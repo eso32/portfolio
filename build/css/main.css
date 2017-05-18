@@ -97,6 +97,7 @@ body > div {
           box-sizing: border-box;
   height: 100%;
   margin: 0px auto;
+  border: 0px;
   width: 33.33%;
   float: left;
 }
