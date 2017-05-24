@@ -1,27 +1,24 @@
-document.getElementById("body").addEventListener("mousemove", follow);
+var app = angular.module('portfolio', ['ngRoute']);
 
-//SLIDING EFFECT FOR THE HOME PAGE
-function follow(event){
-  var x = event.clientX;
-  var y = event.clientY;
-  var w = window.innerWidth;
-  var leftDiv = document.getElementById('leftD');
-  var rightDiv = document.getElementById('rightD');
+app.config(function($routeProvider){
+	$routeProvider
+	.when('/',{
+		controller: 'welcomeCtrl',
+		templateUrl: 'js/templates/welcome.html'
+	})
+	.when('/portfolio',{
+		controller: 'portfolioCtrl',
+		templateUrl: 'js/templates/portfolio.html'
+	})
+	.when('/portfolio/project/:id',{
+		controller: 'projectCtrl',
+		templateUrl: 'js/templates/project.html'
+	})
+	.otherwise({
+		redirectTo: '/'
+	});
+});
 
-  rightDiv.style.width = (1-x/w)*100 +"%";
-  leftDiv.style.width = x/w*100 +"%";
-}
+app.controller('projectCtrl', ['$scope','$http', function($scope, $http){
 
-//ONCLICK EFECT FOR HOMEPAGE (BLOG | PORTFOLIO)
-function change(elem){
-  document.getElementById("body").removeEventListener("mousemove", follow);
-  var leftDiv = document.getElementById('leftD');
-  var rightDiv = document.getElementById('rightD');
-  if(elem.innerHTML === "BLOG"){
-    leftDiv.style.width = "100%";
-    rightDiv.style.width = "0%";
-  } else if(elem.innerHTML === "PORTFOLIO"){
-    leftDiv.style.width = "0%";
-    rightDiv.style.width = "100%";
-  }
-}
+}]);

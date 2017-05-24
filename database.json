@@ -2,37 +2,49 @@
   "projects": [
     {
       "name": "PROJECT CARD",
+      "technology": "HTML, CSS, JavaScript, JS",
       "id": "tproj",
+      "color": "#2ECC40",
       "image": "img/epm.png",
       "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
     },
     {
       "name": "EQUIPMENT EFFICENCY DATABASE",
+      "technology": "HTML, CSS, JavaScript, JS, PHP, MySQL",
       "id": "trproj",
+      "color": "#A864A8",
       "image": "img/plk.png",
       "description": "The main feature of system is collecting and sharing data from project's site. System is based on PHP and BOOTSTRAP."
     },
     {
+      "name": "CINEMAX BOOKING SYSTEM",
+      "technology": "HTML, CSS, JavaScript, JS, JSON",
+      "id": "tproj",
+      "color": "#F79517",
+      "image": "img/cinemax_mini.png",
+      "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
+    },
+    {
       "name": "THE TAKE APP BLOG",
+      "technology": "HTML, CSS, JavaScript, JS",
       "id": "tproj",
-      "image": "img/take.png",
+      "color": "#42aaf4",
+      "image": "img/take_mini.png",
       "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
     },
     {
       "name": "COMMERCIAL PAGE",
+      "technology": "HTML, CSS, JavaScript, JS",
       "id": "tproj",
+      "color": "#37B649",
       "image": "img/epm.png",
       "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
     },
     {
       "name": "COMMERCIAL PAGE",
+      "technology": "HTML, CSS, JavaScript, JS",
       "id": "tproj",
-      "image": "img/epm.png",
-      "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
-    },
-    {
-      "name": "COMMERCIAL PAGE",
-      "id": "tproj",
+      "color": "#A864A8",
       "image": "img/epm.png",
       "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
     }

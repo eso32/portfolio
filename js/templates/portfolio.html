@@ -1,31 +1,27 @@
 <div id="boxLeft">
-
     <div class="tail2" id="back" onclick="history.back()" onmouseover="btnEffect(this)" onmouseout="btnEffectOut(this)"><div class="curtain"></div></div>
     <div class="tail2" id="techno">
-      <span>CSS</span>
-      <span>HTML</span>
-      <span>JS</span>
-      <span>BOOTSTRAP</span>
-      <span>RWD</span>
-      <span>PHP</span>
-      <span>CSS</span>
-      <span>SQL</span>
-      <span>PROJECT MANAGEMENT</span>
+      <!-- <input type="text" placeholder="example: CSS HTML" ng-model="globalSearch" /> -->
+      <span ng-click="filterTech('CSS', $event)">CSS</span>
+      <span ng-click="filterTech('HTML', $event)">HTML</span>
+      <span ng-click="filterTech('JS', $event)">JS</span>
+      <span ng-click="filterTech('BOOTSTRAP', $event)">BOOTSTRAP</span>
+      <span ng-click="filterTech('RWD', $event)">RWD</span>
+      <span ng-click="filterTech('PHP', $event)">PHP</span>
+      <span ng-click="filterTech('SQL', $event)">SQL</span>
+      <span ng-click="filterTech('PM', $event)">PROJECT MANAGEMENT</span>
     </div>
 </div>
 
 <div id="boxRight">
-  <div class="tail" id="{{project.id}}" ng-repeat="project in projects">
+  <div class="tail" style="background-color: {{project.color}}" id="{{project.id}}" ng-repeat="project in projects | filter: globalSearch">
     <h1>{{project.name}}</h1>
     <a href="#/portfolio/project/{{$index}}">
         <img ng-src="{{project.image}}" />
     </a>
-
   </div>
 
   <div id="scroll" class="blink">
     <img src="img/scroll.png" />
   </div>
 </div>
-
-<script src="js/project.js"></script>

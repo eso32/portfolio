@@ -1,0 +1,1 @@
+function follow(e){var t=e.clientX,n=(e.clientY,window.innerWidth),d=document.getElementById("leftD");document.getElementById("rightD").style.width=100*(1-t/n)+"%",d.style.width=t/n*100+"%"}document.getElementById("body").addEventListener("mousemove",follow);

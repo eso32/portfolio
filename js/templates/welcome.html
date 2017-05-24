@@ -1,18 +1,19 @@
-<div id="leftD">
-  <img src="img/logo.png" />
-</div>
-<div id="rightD">
-  <img src="img/arrow.png" />
+<div ng-mousemove="followMe($event)">
+  <div id="leftD">
+    <img src="img/logo.png" />
+  </div>
+  <div id="rightD">
+    <img src="img/arrow.png" />
+  </div>
 </div>
 
 <div id="centralBox">
-<div style="border-right: 1px #703d16 solid;">
-  <h1 onclick="change(this)"><a href="http://primaverap6.eu">BLOG</a></h1><br />
-  primaverap6.eu
+  <div style="border-right: 1px #703d16 solid;">
+    <h1><a href="http://primaverap6.eu">BLOG</a></h1><br />
+    primaverap6.eu
+  </div>
+  <div>
+    <h1><a href="#/portfolio">PORTFOLIO</a></h1><br />
+    lifeonfrontend.eu
+  </div>
 </div>
-<div>
-  <h1 onclick="change(this)"><a href="#/portfolio">PORTFOLIO</a></h1><br />
-  lifeonfrontend.eu
-</div>
-</div>
-<script src="js/app.js"></script>

@@ -140,3 +140,12 @@
 .blink {
   animation: blink 2s linear 0s infinite;
 }
+
+@media only screen and (max-width: 900px) {
+  #boxLeft{
+    display: none;
+  }
+  #boxRight{
+    width: 100%;
+  }
+}
