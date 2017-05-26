@@ -1,5 +1,11 @@
 var app = angular.module('portfolio', ['ngRoute']);
 
+app.filter('makeUpper', function(){
+	return function (item) {
+		return item.toUpperCase();
+	}
+})
+
 app.config(function($routeProvider){
 	$routeProvider
 	.when('/',{
@@ -18,7 +24,3 @@ app.config(function($routeProvider){
 		redirectTo: '/'
 	});
 });
-
-app.controller('projectCtrl', ['$scope','$http', function($scope, $http){
-
-}]);

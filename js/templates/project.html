@@ -2,18 +2,19 @@
   <div class="tail btn" id="back" onmouseover="btnEffect(this)" onmouseout="btnEffectOut(this)" onclick="history.back()">
     <div class="curtain"></div>
   </div>
-  <div class="tailBig">
+  <div class="tailBig tail-img">
     <img ng-src="{{project.image}}" />
     <!-- <img src="img/epm.png" /> -->
   </div>
   <div class="tailBig">
-    <div class="tailSmall" id="description">
+    <div class="tailSmall tail-text" id="description">
       <h1>{{project.name}}</h1>
       <p>{{project.description}}</p>
     </div>
+    <a href="{{project.link}}">
     <div class="tailSmall btn" id="visit" onmouseover="btnEffect(this)" onmouseout="btnEffectOut(this)" onclick="transVisit(this)">
       <span>VISIT</span>
       <div class="curtain"></div>
-    </div>
+    </div></a>
   </div>
 </div>

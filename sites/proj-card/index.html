@@ -1,0 +1,242 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Project Card</title>
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/main.css" rel="stylesheet">
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body>
+   <div class="help hidden-xs">
+     <div class="sp">
+       <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+     </div>
+     <div class="tx">
+       Need help? <br  /><small>Click here</small>
+     </div>
+   </div>
+
+   <div id="contact">
+     phone: 0043 654 122 322<br />
+     e-mail: j.kowalsky@bombardier.com
+   </div>
+
+   <header class="container">
+     <div class="row">
+       <div class="col-sm-4">
+         <img src="img/logo.png"  /><br />
+       </div>
+       <div class="col-sm-8">
+         <h1>U557</h1><br />
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-sm-4 hidden-xs">
+         <h3>Enterprise Project Center</h3>
+       </div>
+       <div class="col-sm-8">
+         <h3>Railway system renovation from Gdansk to Sopot.</h3>
+       </div>
+     </div>
+   </header>
+   <section class="container">
+     <div class="row">
+       <div class="col-sm-12">
+         <h1>Core project team <span data-placement="bottom" data-toggle="tooltip" title="Click on the name to see contact card" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></h1>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-sm-offset-1 col-sm-2 col-xs-6 lab">
+         Project Manager:
+       </div>
+       <div class="col-sm-3 col-xs-6" onclick="contact(this, event)">
+         Jan Kowalsky
+       </div>
+       <div class="col-sm-offset-1 col-sm-2 col-xs-6 lab">
+         Project Planner:
+       </div>
+       <div class="col-sm-3 col-xs-6">
+         John Smith
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-sm-offset-1 col-sm-2 lab col-xs-6">
+         Project Controller:
+       </div>
+       <div class="col-sm-3 col-xs-6">
+         Megan Ferth
+       </div>
+       <div class="col-sm-offset-1 col-sm-2 lab col-xs-6">
+         Project Buyer:
+       </div>
+       <div class="col-sm-3 col-xs-6">
+         Marek Nisok
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-sm-offset-1 col-sm-2 lab col-xs-6">
+         H&S Coordinator:
+       </div>
+       <div class="col-sm-3 col-xs-6">
+         Nico Kremlic
+       </div>
+       <div class="col-sm-offset-1 col-sm-2 lab col-xs-6">
+         Product Owner:
+       </div>
+       <div class="col-sm-3 col-xs-6">
+         Jessica Crie
+       </div>
+     </div>
+     <hr />
+     <div class="row">
+       <div class="col-sm-12">
+         <h1>Management Information</span></h1>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-sm-offset-1 col-sm-2 lab">
+         Project Target:
+       </div>
+       <div class="col-sm-9">
+         Deliver on time and within budget high quality solutions.
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-sm-offset-1 col-sm-2 lab">
+         Planning Software:
+       </div>
+       <div class="col-sm-9">
+         Primavera P6 Professional R8.4
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-sm-offset-1 col-sm-2 lab">
+         Risk management:
+       </div>
+       <div class="col-sm-3">
+         Risk & Opportunities DB v2.3
+       </div>
+     </div>
+     <hr />
+     <div class="row">
+       <div class="col-sm-12">
+         <h1>Deadlines <span data-placement="bottom" data-toggle="tooltip" title="Deadlines are updated daily based on Primaver P6 schedul" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></h1>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-sm-offset-1 col-sm-2 col-xs-6 lab">
+         Project start:
+       </div>
+       <div class="col-sm-9 col-xs-6">
+         10-02-2017
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-sm-offset-1 col-sm-2 col-xs-6 lab">
+         Project finish:
+       </div>
+       <div class="col-sm-9 col-xs-6">
+         10-04-2021
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-sm-offset-1 col-sm-2 col-xs-6 lab">
+         Next milestone:
+       </div>
+       <div class="col-sm-5 col-xs-6">
+         12-05-2017<br />
+         <small>Software purchase approval - heigher managment involved</small>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-sm-offset-1 col-sm-2 lab col-xs-6">
+         Next gate review:
+       </div>
+       <div class="col-sm-5 col-xs-6">
+         31-05-2017<br />
+         Gate review - II
+       </div>
+       <div class="col-sm-3">
+         <input id="requestBtn" type="button" value="Request deadlines report"/>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-sm-12">
+         <h1>Change Management <span data-placement="bottom" data-toggle="tooltip" title="Click on the Change ID to see full Change Card" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></h1>
+       </div>
+     </div>
+     <div class="row">
+       <div class="table-responsive">
+         <table class="table table-striped">
+           <thead>
+             <tr>
+               <th>Change ID</th>
+               <th>Change Description</th>
+               <th>Requester</th>
+               <th>Requested on</th>
+               <th>Decision Date</th>
+               <th>Status</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>CH-01211K</td>
+               <td>New SW module for remote system  management.</td>
+               <td>Client</td>
+               <td>04-01-2017</td>
+               <td>10-02-2017</td>
+               <td>
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+               </td>
+             </tr>
+             <tr>
+               <td>CH-01222C</td>
+               <td>Deadline #23 postpone</td>
+               <td>Jan Kowalsky</td>
+               <td>04-01-2017</td>
+               <td>05-12-2016</td>
+               <td>
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+               </td>
+             </tr>
+             <tr>
+               <td>CH-01336F</td>
+               <td>Complex configuration change according to bad tender estimation</td>
+               <td>Client</td>
+               <td>04-01-2017</td>
+               <td>01-11-2016</td>
+               <td>
+                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+               </td>
+             </tr>
+           </tbody>
+         </table>
+         </div>
+     </div>
+   </section>
+   <div class="notification">
+     <div>
+       <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+     </div>
+     <div>
+       Request sent <br  />successfully!
+     </div>
+
+   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+ </body>
+
+ </html>

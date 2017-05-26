@@ -14,6 +14,7 @@ body {
   color: white;
   text-align: center;
   height: 100%;
+  min-height: 450px;
 }
 body > div {
   height: 100%;
@@ -60,15 +61,18 @@ body > div > div {
 }
 
 #centralBox {
-  position: fixed;
-  top: 0%;
-  left: 35%;
-  height: 20%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 150px;
   width: 30%;
   background-color: #f1f1f1;
   opacity: 0.8;
-  -webkit-border-radius: 0px 0px 4px 4px;
-          border-radius: 0px 0px 4px 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
   min-width: 300px;
 }
 #centralBox > div {
@@ -85,7 +89,67 @@ body > div > div {
   color: inherit;
   text-decoration: none;
 }
+#centralBox > div img {
+  display: none;
+}
 
+@media only screen and (max-width: 900px) {
+  #leftD, #rightD {
+    display: none;
+  }
+
+  #centralBox {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    opacity: 1;
+    height: 100%;
+    min-height: 450px;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  #centralBox > div {
+    letter-spacing: 2px;
+    border: 1px solid grey;
+    width: 100%;
+    height: 50%;
+    float: left;
+    position: relative;
+  }
+  #centralBox > div h1 {
+    cursor: pointer;
+    padding-top: 10px;
+    font-size: 50px;
+  }
+  #centralBox > div h1 a {
+    color: inherit;
+    text-decoration: none;
+  }
+  #centralBox > div img {
+    display: block;
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -10%);
+        -ms-transform: translate(-50%, -10%);
+            transform: translate(-50%, -10%);
+  }
+  #centralBox .p6 {
+    color: #F1F1F1;
+    background-color: #33363B;
+  }
+  #centralBox .portfolio-bg {
+    color: #33363B;
+    background: url("../../img/bg_small.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
 #boxLeft {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -94,6 +158,7 @@ body > div > div {
   border: 0px;
   width: 33.33%;
   float: left;
+  min-height: 450px;
 }
 #boxLeft .tail {
   overflow: hidden;
@@ -102,6 +167,7 @@ body > div > div {
           box-sizing: inherit;
   width: 100%;
   height: 50%;
+  min-height: 300px;
   padding-top: 20px;
   float: left;
   position: relative;
@@ -119,10 +185,6 @@ body > div > div {
   padding-top: 20px;
   float: left;
   position: relative;
-  cursor: pointer;
-}
-#boxLeft .tail2 h1 {
-  letter-spacing: 2px;
 }
 
 #boxRight {
@@ -132,6 +194,7 @@ body > div > div {
   margin: 0px auto;
   width: 66.66%;
   float: left;
+  min-height: 450px;
 }
 #boxRight .tail {
   overflow: hidden;
@@ -146,6 +209,9 @@ body > div > div {
 }
 #boxRight .tail h1 {
   letter-spacing: 2px;
+}
+#boxRight .tail p {
+  font-family: 'Ubuntu', sans-serif;
 }
 #boxRight .tail img {
   cursor: pointer;
@@ -180,21 +246,17 @@ body > div > div {
 }
 
 #techno {
+  letter-spacing: 2px;
   background: #662d91;
   position: relative;
-  text-align: left;
-  cursor: default !important;
+  text-align: center;
 }
-#techno span {
-  white-space: nowrap;
+#techno input {
+  margin-top: 20px;
+  width: 80%;
+  height: 50px;
   font-size: 25px;
-  cursor: pointer;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
-  padding: 5px 10px;
-  margin-left: 10px;
-  background: #501b78;
-  line-height: 60px;
+  padding-left: 10px;
 }
 
 #bproj {
@@ -252,6 +314,42 @@ body > div > div {
   #boxRight {
     width: 100%;
   }
+
+  #boxRight {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100%;
+    margin: 0px auto;
+    width: 100%;
+    float: left;
+  }
+  #boxRight .tail {
+    overflow: hidden;
+    border: 2px solid white;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+    width: 100%;
+    height: 50%;
+    padding-top: 20px;
+    float: left;
+    position: relative;
+  }
+  #boxRight .tail h1 {
+    letter-spacing: 2px;
+  }
+  #boxRight .tail img {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40%;
+    width: 80%;
+    -webkit-transition: top 0.3s ease  0s;
+    transition: top 0.3s ease  0s;
+  }
+  #boxRight .tail img:hover {
+    top: 30%;
+  }
 }
 #box {
   -webkit-box-sizing: border-box;
@@ -266,11 +364,11 @@ body > div > div {
           box-sizing: inherit;
   width: 33.33%;
   height: 50%;
-  padding-top: 20px;
   float: left;
   position: relative;
 }
 #box .tailBig {
+  position: relative;
   background: #0061ac;
   overflow: hidden;
   border: 2px solid white;
@@ -298,16 +396,46 @@ body > div > div {
   float: left;
   position: relative;
 }
-#box .tailBig .tailSmall span {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  font-size: 80px;
-  margin-top: -60px;
-}
 #box .tailBig .tailSmall p {
   padding: 15px;
   text-align: justify;
+}
+#box .tailBig a {
+  color: inherit;
+  height: 50%;
+  width: 100%;
+  text-decoration: none;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+#box .tailBig a .tailSmall {
+  overflow: hidden;
+  border-bottom: 2px solid white;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+  float: left;
+  position: relative;
+}
+#box .tailBig a .tailSmall span {
+  font-size: 80px;
+}
+#box .tailBig a .tailSmall p {
+  padding: 15px;
+  text-align: justify;
+}
+#box .tailBig a .tailSmall img {
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #description {
@@ -335,7 +463,110 @@ body > div > div {
     display: none;
   }
 
+  #box {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100%;
+    margin: 0px auto;
+  }
   #box .tailBig {
-    width: 50%;
+    background: #0061ac;
+    border: 2px solid white;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+    height: auto;
+    width: 100%;
+    float: left;
+  }
+  #box .tailBig h1 {
+    letter-spacing: 2px;
+  }
+  #box .tailBig .tailSmall {
+    overflow: hidden;
+    border-bottom: 2px solid white;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+    height: 50%;
+    min-height: 300px;
+    width: 100%;
+    padding-top: 20px;
+    float: left;
+    position: relative;
+  }
+  #box .tailBig .tailSmall a {
+    color: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-decoration: none;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #box .tailBig .tailSmall a span {
+    font-size: 80px;
+    z-index: 1001;
+  }
+  #box .tailBig .tailSmall p {
+    padding: 15px;
+    text-align: justify;
+  }
+  #box .tailBig .tail-text {
+    height: auto;
+  }
+  #box .tail-img {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  #box .tail-img img {
+    margin-top: 15%;
+    width: 80%;
+    position: static;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #f25a41;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+#curtain {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@keyFrames spin {
+  from {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }

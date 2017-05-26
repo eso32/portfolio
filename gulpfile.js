@@ -28,7 +28,7 @@ gulp.task('watch', function(){
   livereload({ start: true });
   livereload.listen();
   gulp.watch('js/*.js', ['scripts']);
-  gulp.watch('scss/**/*.scss', ['styles']);
+  gulp.watch('scss/*.scss', ['styles']);
 })
 
 

@@ -1,22 +1,17 @@
 <div id="boxLeft">
-    <div class="tail2" id="back" onclick="history.back()" onmouseover="btnEffect(this)" onmouseout="btnEffectOut(this)"><div class="curtain"></div></div>
+    <div class="tail2" id="back" onclick="history.back();" onmouseover="btnEffect(this)" onmouseout="btnEffectOut(this)"><div class="curtain"></div></div>
     <div class="tail2" id="techno">
-      <!-- <input type="text" placeholder="example: CSS HTML" ng-model="globalSearch" /> -->
-      <span ng-click="filterTech('CSS', $event)">CSS</span>
-      <span ng-click="filterTech('HTML', $event)">HTML</span>
-      <span ng-click="filterTech('JS', $event)">JS</span>
-      <span ng-click="filterTech('BOOTSTRAP', $event)">BOOTSTRAP</span>
-      <span ng-click="filterTech('RWD', $event)">RWD</span>
-      <span ng-click="filterTech('PHP', $event)">PHP</span>
-      <span ng-click="filterTech('SQL', $event)">SQL</span>
-      <span ng-click="filterTech('PM', $event)">PROJECT MANAGEMENT</span>
+      <h2>Search for project name or technology</h2>
+      <input type="text" placeholder="example: JS" ng-model="globalSearch" />
     </div>
 </div>
 
 <div id="boxRight">
-  <div class="tail" style="background-color: {{project.color}}" id="{{project.id}}" ng-repeat="project in projects | filter: globalSearch">
+  <div class="tail" style="background-color: {{project.color}}" id="{{project.id}}"
+       ng-repeat="project in projects | filter: globalSearch">
     <h1>{{project.name}}</h1>
-    <a href="#/portfolio/project/{{$index}}">
+    <p>{{project.technology}}</p>
+    <a href="#/portfolio/project/{{project.id}}">
         <img ng-src="{{project.image}}" />
     </a>
   </div>

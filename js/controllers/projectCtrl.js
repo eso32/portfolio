@@ -2,5 +2,4 @@ app.controller('projectCtrl', ['$scope', '$routeParams', 'fetchData', function($
   fetchData.success(function(data) {
     $scope.project = data.projects[$routeParams.id];
   });
-
 }]);

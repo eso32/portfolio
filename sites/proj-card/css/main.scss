@@ -1,0 +1,184 @@
+$mainColor: rgba(217,217,217, 0.95);
+$secColor: #333;
+$green: #39b54a;
+
+@mixin gradient($color1: rgba(255,255,255,0.8)) {
+  background: $mainColor; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($color1, $mainColor); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($color1, $mainColor); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($color1, $mainColor); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($color1, $mainColor); /* Standard syntax */
+}
+
+@mixin trans($transition){
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  min-width: 300px;
+  padding-top: 30px;
+  background: url('../img/bg.jpg') no-repeat;
+  background-size: cover;
+}
+
+header, section{
+  border: 1px solid $mainColor;
+}
+
+header.container{
+  height: auto;
+  @include gradient();
+  padding: 30px;
+  div{
+    img{
+      width:100%;
+      height: auto;
+    }
+  }
+  h1{
+    margin:0px;
+  }
+  p{
+    margin-left: 0px;
+  }
+}
+
+section.container{
+  margin:{
+    top: 30px;
+    bottom: 30px;
+  }
+  background-color: rgba(255,255,255,0.95);
+  padding: 20px;
+  .first{
+    font-size: 30px;
+    font-weight: normal;
+  }
+  .row{
+    padding: 10px 0px;
+    h1{
+      margin: 0px 0px 20px 0px;
+      span{
+        opacity: 0.5;
+        font-size: 30px;
+      }
+    }
+    .lab{
+      font-weight: 600;
+    }
+    .table-responsive{
+      width:90%;
+      margin: auto;
+    }
+  }
+}
+
+div.notification{
+  background-color: $green;
+  padding: 20px;
+  width: 240px;
+  height: 80px;
+  position: fixed;
+  bottom: -100px;
+  right: 30px;
+  border-radius: 5px;
+  @include trans(bottom .3s linear 0s);
+  div{
+    width: 50%;
+    height: 100%;
+    float: left;
+    font-weight: 900;
+    span{
+      opacity: 0.5;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-size: 60px;
+    }
+  }
+}
+
+div.help{
+  z-index: 1000;
+  background-color: $green;
+  padding: 10px;
+  width: 200px;
+  height: 60px;
+  position: fixed;
+  top: 30px;
+  right: 0px;
+  border-radius: 5px 0px 0px 5px;
+  @include trans(right .3s linear 0s);
+  div{
+    height: 100%;
+    float: left;
+    font-weight: 900;
+    span{
+      opacity: 0.5;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-size: 40px;
+    }
+  }
+  div.sp{
+    width: 30%;
+  }
+  div.tx{
+    margin-left: 10%;
+    width: 60%;
+  }
+}
+
+#requestBtn{
+  float: right;
+  height: 50px;
+  padding: 10px;
+  background-color: $green;
+  color: white;
+  border-radius: 3px;
+  font-weight: 900;
+}
+
+div#contact{
+  position: absolute;
+  color: white;
+  top: 0px;
+  left: 0px;
+  background-color: $green;
+  width: auto;
+  height: auto;
+  z-index: 1001;
+  border-radius: 3px;
+  padding: 20px;
+  opacity: 0;
+  @include trans(opacity 0.3s linear 0s);
+}
+
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 27px;
+  }
+
+  section.container {
+    .row{
+      padding: 0px;
+    }
+    .col-xs-6 {
+      padding: 10px;
+    }
+  }
+
+  #requestBtn{
+    margin: 10px;
+  }
+}

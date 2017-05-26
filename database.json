@@ -2,32 +2,36 @@
   "projects": [
     {
       "name": "PROJECT CARD",
-      "technology": "HTML, CSS, JavaScript, JS",
-      "id": "tproj",
+      "technology": "HTML, CSS, JavaScript, BOOTSTRAP",
+      "link": "/sites/proj-card/index.html",
+      "id": "0",
       "color": "#2ECC40",
       "image": "img/epm.png",
       "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
     },
     {
       "name": "EQUIPMENT EFFICENCY DATABASE",
-      "technology": "HTML, CSS, JavaScript, JS, PHP, MySQL",
-      "id": "trproj",
+      "technology": "HTML, CSS, JavaScript, PHP, MySQL",
+      "link": "/sites/plk/index.php",
+      "id": "1",
       "color": "#A864A8",
       "image": "img/plk.png",
       "description": "The main feature of system is collecting and sharing data from project's site. System is based on PHP and BOOTSTRAP."
     },
     {
       "name": "CINEMAX BOOKING SYSTEM",
-      "technology": "HTML, CSS, JavaScript, JS, JSON",
-      "id": "tproj",
+      "technology": "HTML, CSS, JavaScript, JSON, MySQL, PHP",
+      "link": "/sites/cinemax/index.html",
+      "id": "2",
       "color": "#F79517",
-      "image": "img/cinemax_mini.png",
-      "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
+      "image": "img/sites/cinemax.png",
+      "description": "Web page generates all seats in the cinema and indicates which are already booked. Data from the MySQL DB is retrive by PHP and encoded to JSON then data is change to JavaScript Object and displayed on the screen. "
     },
     {
       "name": "THE TAKE APP BLOG",
       "technology": "HTML, CSS, JavaScript, JS",
-      "id": "tproj",
+      "link": "/sites/take/index.php",
+      "id": "3",
       "color": "#42aaf4",
       "image": "img/take_mini.png",
       "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
@@ -35,15 +39,17 @@
     {
       "name": "COMMERCIAL PAGE",
       "technology": "HTML, CSS, JavaScript, JS",
-      "id": "tproj",
+      "link": "/sites/plk/index.php",
+      "id": "4",
       "color": "#37B649",
       "image": "img/epm.png",
       "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
     },
     {
-      "name": "COMMERCIAL PAGE",
-      "technology": "HTML, CSS, JavaScript, JS",
-      "id": "tproj",
+      "name": "WORDPRESS BLOG",
+      "technology": "HTML, CSS, PHP",
+      "link": "/sites/plk/index.php",
+      "id": "5",
       "color": "#A864A8",
       "image": "img/epm.png",
       "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
