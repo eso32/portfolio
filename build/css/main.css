@@ -93,6 +93,39 @@ body > div > div {
   display: none;
 }
 
+/* The starting CSS styles for the enter animation */
+.lol.ng-enter {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transform: translateX(200%) rotate(15deg) scale(0.1, 0.1);
+      -ms-transform: translateX(200%) rotate(15deg) scale(0.1, 0.1);
+          transform: translateX(200%) rotate(15deg) scale(0.1, 0.1);
+}
+
+/* The finishing CSS styles for the enter animation */
+.lol.ng-enter.ng-enter-active {
+  -webkit-transform: translateX(0%) rotate(0deg) scale(1, 1);
+      -ms-transform: translateX(0%) rotate(0deg) scale(1, 1);
+          transform: translateX(0%) rotate(0deg) scale(1, 1);
+}
+
+/* now the element will fade out before it is removed from the DOM */
+.lol.ng-leave {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.lol.ng-leave.ng-leave-active {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
 @media only screen and (max-width: 900px) {
   #leftD, #rightD {
     display: none;

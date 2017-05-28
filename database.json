@@ -12,16 +12,16 @@
     {
       "name": "EQUIPMENT EFFICENCY DATABASE",
       "technology": "HTML, CSS, JavaScript, PHP, MySQL",
-      "link": "/sites/plk/index.php",
+      "link": "/sites/pkp/index.php",
       "id": "1",
       "color": "#A864A8",
-      "image": "img/plk.png",
-      "description": "The main feature of system is collecting and sharing data from project's site. System is based on PHP and BOOTSTRAP."
+      "image": "img/sites/plk.png",
+      "description": "The site was created as a response to the lack of necessary processing tools. Login system was implemented in PHP and MySQL, front end contains libraries like Chart.js and jsTree."
     },
     {
       "name": "CINEMAX BOOKING SYSTEM",
       "technology": "HTML, CSS, JavaScript, JSON, MySQL, PHP",
-      "link": "/sites/cinemax/index.html",
+      "link": "/sites/cinemax/index.php",
       "id": "2",
       "color": "#F79517",
       "image": "img/sites/cinemax.png",

@@ -1,10 +1,4 @@
-var app = angular.module('portfolio', ['ngRoute']);
-
-app.filter('makeUpper', function(){
-	return function (item) {
-		return item.toUpperCase();
-	}
-})
+var app = angular.module('portfolio', ['ngRoute', 'ngAnimate']);
 
 app.config(function($routeProvider){
 	$routeProvider
