@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+body {
+	/*overflow:hidden;*/
+}
+
+.fo{
+	height: 50px;
+	width: 100%;
+}
+
+nav{
+	font-family: 'Russo One', sans-serif;
+	background-color: #2A2B7F;
+	color:white;
+	margin-bottom: 20px;
+}
+.bg{
+	background-color: #8cb5f7;
+	margin-bottom: 20px;
+}
+.table-responsive{
+	font-size: 0.5em;
+}
+
+.nav .nav-tabs{
+	padding-top:10px;
+	padding-bottom: 10px;
+
+}
+
+.row{
+	padding-top: 10px;
+}
+
+.edit{
+	min-width: 40px;
+}
+
+.shadow{
+	border: 1px solid #999;
+	box-shadow: 2px 2px 1px #999;
+}
+
+.centLog{
+	background-color: rgba(42, 43, 127, 0.8);
+	min-height: 250px;
+	color: black;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	font-size: 1.5em;
+}
+
+.centLog .text-right{
+	color:white;
+}
+
+input[name=searchBtn], input[type=reset], input[name=searchBtn]:focus, input[type=reset]:focus {
+	border: 1px solid #4142b5;
+  background: #2A2B7F;
+  color: white;
+  border:0 none;
+  cursor:pointer;
+	text-align: center;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+input[name=searchBtn]:hover, input[type=reset]:hover {
+    background: #4142b5;
+    color: white;
+}
+
+h1, h3{
+	padding: 15px;
+}
+
+figure img, iframe{
+	margin: 2em auto;
+	width: 100%;
+	height: auto;
+}

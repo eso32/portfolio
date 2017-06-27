@@ -19,6 +19,7 @@ body {
   text-align: center;
   height: 100%;
   min-height: 450px;
+  position: relative;
   &>div{
     height: 100%;
     &>div{
@@ -57,9 +58,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 200px;
-    margin-top: -100px;
-    margin-left: -100px;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -98,7 +97,7 @@ body {
 .lol.ng-enter {
   transition: all 0.3s linear;
   transition-delay: 0.1s;
-  transform: translateX(200%) rotate(15deg) scale(0.1,0.1);
+  transform: translateX(100%) rotate(0deg) scale(0.1,0.1);
 }
 
 /* The finishing CSS styles for the enter animation */
@@ -109,10 +108,10 @@ body {
 /* now the element will fade out before it is removed from the DOM */
 .lol.ng-leave {
   transition: all 0.3s linear;
-  transform: translateX(0%);
+  transform: translateX(0%) scale(1,1);
 }
 .lol.ng-leave.ng-leave-active {
-  transform: translateX(-100%);
+  transform: translateX(-100%) scale(0.1,0.1);
 }
 
 @media only screen and (max-width: $maxScreen) {
@@ -171,4 +170,3 @@ body {
 
 @import "portfolio.scss";
 @import "project.scss";
-@import "loader.scss";

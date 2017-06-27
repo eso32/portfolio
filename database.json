@@ -1,58 +1,69 @@
 {
   "projects": [
     {
-      "name": "PROJECT CARD",
-      "technology": "HTML, CSS, JavaScript, BOOTSTRAP",
-      "link": "/sites/proj-card/index.html",
+      "name": "HR SYSTEM",
+      "technology": "SPA, HTML, CSS, JS, ANGULARJS, RWD, BOOTSTRAP",
+      "link": "/sites/hrsystem/start.html",
       "id": "0",
+      "color": "#42aaf4",
+      "image": "img/sites/hrsystem.png",
+      "description": "The single page application supports the recruitment and staff management. Employee data retrieved using AJAX (JSON), charts generated using chart.js.",
+      "angular": true
+    },
+    {
+      "name": "ANGULAR QUIZ",
+      "technology": "HTML, CSS, ANGULARJS, RWD, BOOTSTRAP",
+      "link": "/sites/quiz/index.html",
+      "id": "1",
       "color": "#2ECC40",
-      "image": "img/epm.png",
-      "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
+      "image": "img/sites/quiz.png",
+      "description": "This page allows you to implement text and graphical questions. Quiz adapted for mobile devices. The site works in angular.js and uses the bootstrap framework.",
+      "angular": true
     },
     {
       "name": "EQUIPMENT EFFICENCY DATABASE",
-      "technology": "HTML, CSS, JavaScript, PHP, MySQL",
+      "technology": "HTML, CSS, JavaScript, PHP, MySQL, RWD",
       "link": "/sites/pkp/index.php",
-      "id": "1",
+      "id": "2",
       "color": "#A864A8",
       "image": "img/sites/plk.png",
-      "description": "The site was created as a response to the lack of necessary processing tools. Login system was implemented in PHP and MySQL, front end contains libraries like Chart.js and jsTree."
+      "description": "The purpose of the systems is to collect data and analyze them. The tool should eventually hit the possibility of quickly obtaining critical data that was lacking so far."
+    },
+    {
+      "name": "PROJECT CARD",
+      "technology": "HTML, CSS, JavaScript, BOOTSTRAP, RWD",
+      "link": "/sites/proj-card/index.html",
+      "id": "3",
+      "color": "#F79517",
+      "image": "img/sites/epm.png",
+      "description": "The website is intended to provide the necessary information about the project to interested parties. The advantage is that one source is updated by all the company's departments."
     },
     {
       "name": "CINEMAX BOOKING SYSTEM",
-      "technology": "HTML, CSS, JavaScript, JSON, MySQL, PHP",
+      "technology": "HTML, CSS, JavaScript, JSON",
       "link": "/sites/cinemax/index.php",
-      "id": "2",
-      "color": "#F79517",
+      "id": "4",
+      "color": "#42aaf4",
       "image": "img/sites/cinemax.png",
-      "description": "Web page generates all seats in the cinema and indicates which are already booked. Data from the MySQL DB is retrive by PHP and encoded to JSON then data is change to JavaScript Object and displayed on the screen. "
+      "description": "Online reservation system built in plain JS. The system loads the reservation status, displays a graphical state, and processes the graphical user selection to the JSON object."
     },
     {
       "name": "THE TAKE APP BLOG",
-      "technology": "HTML, CSS, JavaScript, JS",
-      "link": "/sites/take/index.php",
-      "id": "3",
-      "color": "#42aaf4",
-      "image": "img/take_mini.png",
-      "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
+      "technology": "HTML, CSS, RWD",
+      "link": "/sites/take/index.html",
+      "id": "5",
+      "color": "#A864A8",
+      "image": "img/sites/take_mini.png",
+      "description": "Coded psd template. Graphic design by Blaz Robar"
     },
     {
       "name": "COMMERCIAL PAGE",
-      "technology": "HTML, CSS, JavaScript, JS",
-      "link": "/sites/plk/index.php",
-      "id": "4",
+      "technology": "HTML, CSS, BOOTSTRAP, RWD",
+      "link": "/sites/zywiec/index.html",
+      "id": "6",
       "color": "#37B649",
-      "image": "img/epm.png",
-      "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
-    },
-    {
-      "name": "WORDPRESS BLOG",
-      "technology": "HTML, CSS, PHP",
-      "link": "/sites/plk/index.php",
-      "id": "5",
-      "color": "#A864A8",
-      "image": "img/epm.png",
-      "description": "Site was build in Bombardier Transportation as a part of Enterprise Portfolio Management system. The main goal was to help project managers in daily reporting and provide the latest information on demand."
+      "image": "img/sites/zywiec.png",
+      "description": "Commercial web page build with the use of BOOTSTRAP and CSS3."
     }
   ]
 }

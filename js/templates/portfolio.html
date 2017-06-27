@@ -1,23 +1,25 @@
-<div id="curtain" ng-hide="hideLoader"><div class="spinner"></div></div>
 <div id="boxLeft">
     <div class="tail2" id="back" onclick="history.back();" onmouseover="btnEffect(this)" onmouseout="btnEffectOut(this)"><div class="curtain"></div></div>
     <div class="tail2" id="techno">
-      <h2>Search for project name or technology</h2>
-      <input type="text" placeholder="example: JS" ng-model="globalSearch" />
+      <h2>Search for project or technology</h2>
+      <input type="text" placeholder="example: RWD" ng-model="globalSearch" />
     </div>
 </div>
 
 <div id="boxRight">
   <div class="tail" style="background-color: {{project.color}}" id="{{project.id}}"
        ng-repeat="project in projects | filter: globalSearch">
+    <img class="angular" src="img/angular.png" ng-show="project.angular"/>
     <h1>{{project.name}}</h1>
     <p>{{project.technology}}</p>
     <a href="#/portfolio/project/{{project.id}}">
-        <img ng-src="{{project.image}}" />
+      <image-loader photo-src="{{project.image}}"></image-loader>
+        <!-- <img ng-src="{{project.image}}" imageonload/> -->
     </a>
   </div>
 
   <div id="scroll" class="blink">
     <img src="img/scroll.png" />
+    <div id="spier"></div>
   </div>
 </div>

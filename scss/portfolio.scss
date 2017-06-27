@@ -50,24 +50,47 @@
     padding-top: 20px;
     float: left;
     position: relative;
+    a{
+      span{
+        div.loader{
+          position: absolute;
+          left: 0;
+          right: 0;
+          z-index: 1001;
+          bottom: 20%;
+          margin: auto;
+          width: 80px;
+          height: 80px;
+          background: url('../../img/default.svg') no-repeat;
+          background-size: contain;
+        }
+        img.thumb-mini{
+          cursor: pointer;
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          margin-left: -40%;
+          // margin-top: 20px;
+          width: 80%;
+          transition: top 0.3s ease  0s;
+          &:hover{
+            top:30%
+          }
+        }
+      }
+    }
+    img.angular{
+      width: 10%;
+      height: auto;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
     h1{
       letter-spacing: 2px;
     }
     p{
       font-family: 'Ubuntu', sans-serif;
-    }
-    img{
-      cursor: pointer;
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      margin-left: -40%;
-      // margin-top: 20px;
-      width: 80%;
-      transition: top 0.3s ease  0s;
-      &:hover{
-        top:30%
-      }
     }
   }
 }
@@ -123,6 +146,10 @@
   }
 }
 
+.blink {
+  animation: blink 2s linear 0s infinite;
+}
+
 @keyframes blink {
   25% {
     opacity: 0.5;
@@ -133,9 +160,6 @@
   75% {
     opacity: 0.5;
   }
-}
-.blink {
-  animation: blink 2s linear 0s infinite;
 }
 
 @media only screen and (max-width: $maxScreen) {
